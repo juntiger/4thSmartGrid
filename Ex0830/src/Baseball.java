@@ -26,6 +26,7 @@ public class Baseball {
 		while(isRunning) {
 			int strike = 0;
 			int ball = 0;
+			int out = 0;
 			System.out.print("첫번 째 숫자: ");
 			int user1 = sc.nextInt();
 			System.out.print("두번 째 숫자: ");
@@ -45,14 +46,20 @@ public class Baseball {
 
 					}else if(com[i] == user[j] && i != j) {
 						ball++;
+					}else {
+						out++;
 					}
 				
 				}
 			}
-			System.out.printf("%dstrike, %dball\n",strike,ball);
+			
 			if(strike==3) {
 				System.out.println("정답.");
 				isRunning = false;
+			} else if(strike>=1 || ball>=1) {
+				System.out.printf("%dstrike, %dball\n",strike,ball);
+			} else if(out>0) {
+				System.out.println("out");
 			}
 		}
 
