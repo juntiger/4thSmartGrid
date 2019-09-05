@@ -11,9 +11,8 @@ public class Q11 {
 		int countD = 0;
 		int countF = 0;
 		String[] array = new String[score.length()/2+1];
-		
-		
-		
+		//String[] score_split = score.split(",");
+		//파싱한 결과를 score_split에 배열로 저장.
 		for (int i = 0; i < array.length; i++) {
 			array[i] = score.split(",")[i];
 		}
