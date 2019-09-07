@@ -16,6 +16,7 @@ public class Q11 {
 		for (int i = 0; i < array.length; i++) {
 			array[i] = score.split(",")[i];
 		}
+		System.out.println(Integer.toBinaryString(10));
 		
 		for (int i = 0; i < array.length; i++) {
 			switch(array[i]) {
