@@ -6,7 +6,12 @@ public class Q31 {
 		System.out.println(caesar("a B z", 4));
 		String s = "a B z";
 		String[] trs = s.split(" ");
-		char a = Character.to
+		char a = trs[1].charAt(0);
+		System.out.println(a);
+		int b = (int)a+4;
+		System.out.println(b);
+		char c = (char)b;
+		System.out.println(c);
 		
 	
 	}

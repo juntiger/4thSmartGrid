@@ -18,6 +18,7 @@ public class Q14 {
 					input = input/i;
 					//System.out.print(i);
 					
+					
 					intToString = Integer.toString(i);
 					arrayList.add(intToString);
 					arrayList.add(" * ");
